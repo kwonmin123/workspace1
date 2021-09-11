@@ -2,6 +2,8 @@ package regex01;
 
 import java.util.regex.Pattern;
 
+import com.sun.javafx.scene.layout.region.RepeatStructConverter;
+
 
 public class MainClass {
 
@@ -29,10 +31,17 @@ public class MainClass {
 		String s5= "";
 		
 		System.out.println(s2.substring(0,2).replaceAll("x", ""));
+		int[] nums = {1,2,3,4,5};
+//		for(int i=0; i<nums.length;i++){
+//		    if(i>=4&&nums[i]==9) {return false;}
+//		    if(nums[i]==9){
+//		      return true;
+//		    }
+//		    nums.
+	
 		
-		
-		
-		
+			   
+		 
 		
 		
 		
