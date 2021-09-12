@@ -2,11 +2,13 @@ package kakaocode;
 
 public class HumanResource {
 
-	String a;
-	String b;
-	String c;
+	String a;// java,cpp,phython
+	String b;//backend, frontend
+	String c;//junior ,senior
+	String d;//chicken ,pizza
 	int score;
-	String d;
+	
+	//쪼개주지 않는 불친절한 생성자
 	public HumanResource(String a, String b, String c, String d,int score ) {
 		super();
 		this.a = a;
@@ -15,22 +17,18 @@ public class HumanResource {
 		this.score = score;
 		this.d = d;
 	}
+	//스스로 쪼개주는 친절한 생성자
+	public HumanResource(String indiInfo) {
+		super();
+		
+		this.a = indiInfo.split(" ")[0];
+		this.b = indiInfo.split(" ")[1];
+		this.c = indiInfo.split(" ")[2];
+		this.d = indiInfo.split(" ")[3];
+		this.score = Integer.parseInt(indiInfo.split(" ")[4]);
+	}
 	
 	
 	
-}
-//class Solution {
-//    public int[] solution(String[] info, String[] query) {
-//        int[] answer = {};
-//       HumanResource[] hr=new HumanResource[info.length];
-//        for(int i=0;i<info.length;i++ ) {
-//        	
-//        	hr[i] =new HumanResource(info[i].split(" ")[0], info[i].split(" ")[1], info[i].split(" ")[2], info[i].split(" ")[3], Integer.parseInt(info[i].split(" ")[4]));
-//        	
-//        }
-//        
-//        
-//        return answer;
-//    }
 }
 
